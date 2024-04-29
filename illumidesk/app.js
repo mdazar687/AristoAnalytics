@@ -13,21 +13,36 @@ let getStartLoginButton = document.getElementById('getStartLoginButton');
 let loginCreateAccountButton = document.getElementById('loginCreateAccountButton');
 let headerGetStartButton = document.getElementById('headerGetStartButton');
 let courseCreationGetStartButton = document.getElementById('courseCreationGetStartButton');
+let footerSection = document.getElementById('footerSection');
+let faqGetStartButton = document.getElementById('faqGetStartButton');
+let footerLoginButton = document.getElementById('footerLoginButton');
+let footerRegisterButton = document.getElementById('footerRegisterButton');
+let footerPricingButton = document.getElementById('footerPricingButton');
+let higherEducationSection = document.getElementById('higherEducationSection');
+let navbarHigherEduButton = document.getElementById('navbarHigherEduButton');
+let footerHigherEduButton = document.getElementById('footerHigherEduButton');
 
 illumiLogo.onclick = function() {
     sectionHome.classList.remove('d-none');
     pricingSection.classList.add('d-none');
     loginSection.classList.add('d-none');
     getStartSection.classList.add('d-none');
+    footerSection.classList.remove('d-none');
+    higherEducationSection.classList.add('d-none');
 };
 navItem3.onclick = function() {
     pricingSection.classList.remove('d-none');
     sectionHome.classList.add('d-none');
+    footerSection.classList.remove('d-none');
+    loginSection.classList.add('d-none');
+    getStartSection.classList.add('d-none');
+    higherEducationSection.classList.add('d-none');
 };
 loginLogo.onclick = function() {
     navbar.classList.remove('d-none');
     loginSection.classList.add('d-none');
     sectionHome.classList.remove('d-none');
+    footerSection.classList.remove('d-none');
 };
 
 loginbutton.onclick = function() {
@@ -35,12 +50,14 @@ loginbutton.onclick = function() {
     navbar.classList.add('d-none');
     loginSection.classList.remove('d-none');
     pricingSection.classList.add('d-none');
+    footerSection.classList.add('d-none');
 };
 
 getStartLogo.onclick = function() {
     navbar.classList.remove('d-none');
     getStartSection.classList.add('d-none');
     sectionHome.classList.remove('d-none');
+    footerSection.classList.remove('d-none');
 };
 
 getStartButton.onclick = function() {
@@ -48,7 +65,7 @@ getStartButton.onclick = function() {
     navbar.classList.add('d-none');
     getStartSection.classList.remove('d-none');
     pricingSection.classList.add('d-none');
-
+    footerSection.classList.add('d-none');
 };
 
 getStartLoginButton.onclick = function() {
@@ -59,17 +76,63 @@ getStartLoginButton.onclick = function() {
 loginCreateAccountButton.onclick = function() {
     getStartSection.classList.remove('d-none');
     loginSection.classList.add('d-none');
+    footerSection.classList.add('d-none');
 };
 
 headerGetStartButton.onclick = function() {
     sectionHome.classList.add('d-none');
     getStartSection.classList.remove('d-none');
+    footerSection.classList.add('d-none');
 };
 
 courseCreationGetStartButton.onclick = function() {
     sectionHome.classList.add('d-none');
     getStartSection.classList.remove('d-none');
+    footerSection.classList.add('d-none');
 };
+
+faqGetStartButton.onclick = function() {
+    navbar.classList.add('d-none');
+    sectionHome.classList.add('d-none');
+    footerSection.classList.add('d-none');
+    loginSection.classList.remove('d-none');
+};
+
+footerLoginButton.onclick = function() {
+    loginSection.classList.remove('d-none');
+    sectionHome.classList.add('d-none');
+    navbar.classList.add('d-none');
+    pricingSection.classList.add('d-none');
+    footerSection.classList.add('d-none');
+};
+
+footerRegisterButton.onclick = function() {
+    getStartSection.classList.remove('d-none');
+    sectionHome.classList.add('d-none');
+    navbar.classList.add('d-none');
+    pricingSection.classList.add('d-none');
+    footerSection.classList.add('d-none');
+};
+
+footerPricingButton.onclick = function() {
+    pricingSection.classList.remove('d-none');
+    sectionHome.classList.add('d-none');
+    footerSection.classList.remove('d-none');
+    loginSection.classList.add('d-none');
+    getStartSection.classList.add('d-none');
+};
+
+navbarHigherEduButton.onclick = function() {
+    higherEducationSection.classList.remove('d-none');
+    pricingSection.classList.add('d-none');
+    sectionHome.classList.add('d-none');
+}
+
+footerHigherEduButton.onclick = function() {
+    higherEducationSection.classList.remove('d-none');
+    pricingSection.classList.add('d-none');
+    sectionHome.classList.add('d-none');
+}
 
 function toggleMenu() {
     const navbarMenu = document.querySelector('.navbar-menu');

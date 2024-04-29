@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
 body,
 html {
     margin: 0;
@@ -465,7 +467,7 @@ p {
 
 .content-section {
     padding: 20px;
-    background-color: #f0f4f8;
+    background-color: #fff;
     /* Adjust the background color as needed */
 }
 
@@ -1112,4 +1114,8 @@ p {
         text-align: center;
         margin-bottom: 20px;
     }
+}
+
+.higher-education-section {
+    margin-top: 3.8rem;
 }
