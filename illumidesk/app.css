@@ -1,0 +1,1115 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.my-nav {
+    background-color: #f0f4f8;
+}
+
+.nav-logo {
+    max-width: 100px;
+}
+
+.navbar-toggler:hover {
+    transform: translateY(5px);
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.header-content {
+    margin-top: 3.5rem;
+    /* Push content down under the fixed navbar */
+    padding: 1rem;
+    padding-top: 2rem;
+    text-align: center;
+    background-color: #f0f4f8;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+p {
+    color: #666;
+    margin: 1rem 0;
+}
+
+.navbar-link-button {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-link-button-primary {
+    background-color: #007bff;
+    color: #fff;
+    width: 120px;
+}
+
+.navbar-link-button-primary:hover {
+    background-color: #0056b3;
+}
+
+.button {
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-primary {
+    background-color: #22c55e;
+    color: #fff;
+}
+
+.button-primary:hover {
+    background-color: #16a34a;
+}
+
+.home-video-container {
+    background-color: #f0f4f8;
+}
+
+.home-video {
+    border-radius: 30px;
+}
+
+.pricing-section {
+    background-color: #f0f4f8;
+    padding: 0;
+}
+
+.pricing-header {
+    text-align: center;
+    padding-top: 3.8rem;
+}
+
+.pricing-toggle-buttons {
+    margin: 20px 0;
+}
+
+.pricing-toggle-btn {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-toggle-btn.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Style for card containers, hidden by default */
+.pricing-card-container {
+    display: none;
+    /* Hide cards initially */
+}
+
+/* When .active class is added, display the block or flex depending on the screen size */
+.pricing-card-container.active {
+    display: block;
+    /* For xs to sm screens, they stack */
+}
+
+@media (min-width: 768px) {
+
+    /* Adjust this value based on Bootstrap's medium breakpoint */
+    /* Display as flex for md screens and larger */
+    .pricing-card-container.active {
+        display: flex;
+        /* Flex container */
+        justify-content: center;
+        /* Align cards horizontally */
+        flex-wrap: wrap;
+        /* Allow cards to wrap */
+    }
+
+    /* Style for individual cards within the container */
+    .pricing-card {
+        margin: 0.5rem;
+        /* Spacing between cards */
+        flex-basis: calc(33.333% - 1rem);
+        /* Three cards per row with margins */
+        /* Adjust flex-basis calculation based on actual margins and number of cards per row you desire */
+    }
+}
+
+
+/* Style for the cards (update according to your design) */
+.pricing-card {
+    background-color: white;
+    border: 2px solid lightblue;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.card-list-na {
+    text-decoration: line-through;
+}
+
+.pricing-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .5);
+}
+
+/* You can add responsive design styles as needed */
+
+/* FAQ Section Styles */
+/* Bootstrap overrides and custom styles for accordion */
+.faq-card-header {
+    background-color: #f0f4f8;
+    border-bottom: none;
+}
+
+.faq-card-header .btn-link {
+    text-decoration: none;
+    color: #007bff;
+    /* Adjust color as needed */
+    font-size: 1.25rem;
+    /* Adjust font size as needed */
+    text-align: left;
+}
+
+.faq-card-body {
+    font-size: 1rem;
+    /* Adjust font size as needed */
+}
+
+/* Ensure that no border appears when a card is open */
+.faq-card {
+    border: none;
+}
+
+.faq-card+.card {
+    margin-top: 0.5rem;
+    /* Add space between cards */
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 992px) {
+
+    /* Adjust breakpoint as needed */
+    .faq-card-header .btn-link {
+        font-size: 1rem;
+        /* Smaller font size for mobile */
+    }
+}
+
+.pricing-section {
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+    margin-top: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.pricing-option {
+    padding: 1rem;
+    border-right: 1px solid #eaeaea;
+}
+
+.pricing-option:last-child {
+    border-right: none;
+}
+
+.pricing-option .btn {
+    margin-top: 1rem;
+}
+
+.icon-accordion {
+    width: 1em;
+    margin-right: 0.5em;
+    transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) .icon-accordion {
+    transform: rotate(90deg);
+}
+
+.accordion-button {
+    font-size: 1.25rem;
+    color: #007bff;
+    background: white;
+    border: none;
+    padding-left: 1rem;
+    text-align: left;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #495057;
+    background: white;
+    box-shadow: none;
+}
+
+.accordion-header {
+    padding: 0;
+}
+
+.accordion-item {
+    background: none;
+    border: none;
+}
+
+.accordion-body {
+    padding: 1rem;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pricing-option {
+        border-right: none;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    .pricing-option:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .icon-accordion {
+        font-size: 0.8em;
+        /* Smaller icon on extra small devices */
+    }
+
+    .accordion-button {
+        padding-left: 0.5rem;
+        /* Less padding on extra small devices */
+        font-size: 1rem;
+        /* Smaller font size on extra small devices */
+    }
+
+    .accordion-body {
+        padding: 0.5rem;
+        /* Less padding within the accordion body for small devices */
+    }
+
+    .table-responsive {
+        margin-bottom: 15px;
+    }
+
+    .table {
+        margin-bottom: 0;
+        /* Remove bottom margin for the table */
+    }
+
+    .table td,
+    .table th {
+        padding: 0.5rem;
+        /* Smaller padding for table cells on small devices */
+    }
+}
+
+.testimonials-section {
+    background-color: #f0f4f8;
+    /* Placeholder color, adjust as needed */
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.testimonials-text {
+    color: #333;
+    /* Adjust as needed */
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.testimonials-card {
+    display: inline-block;
+    background-color: #fff;
+    /* Placeholder color, adjust as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.testimonials-rating {
+    max-width: 200px;
+    /* Adjust as needed */
+}
+
+/* Add responsive adjustments if necessary */
+@media (max-width: 768px) {
+    .testimonials-section {
+        padding: 1rem 0;
+    }
+
+    .testimonials-text {
+        font-size: 1rem;
+    }
+
+    .testimonials-card {
+        padding: 0.5rem;
+    }
+
+    .testimonials-logo {
+        padding: 0.25rem 0.5rem;
+        font-size: 4.5rem;
+    }
+}
+
+.features-headline-section {
+    background-color: #f0f4f8;
+    /* Adjust the color as needed */
+    padding: 2rem .5rem;
+}
+
+.features-subtitle {
+    color: #333;
+    /* Adjust the color as needed */
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.features-title {
+    color: #333;
+    /* Adjust the color as needed */
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+/* Add responsive adjustments if necessary */
+@media (max-width: 768px) {
+    .features-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .features-subtitle {
+        width: 50%;
+        padding: 0 2rem;
+    }
+
+    .features-title {
+        width: 50%;
+        padding: 0 2rem;
+    }
+}
+
+.features-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #f0f4f8;
+    /* This is a placeholder background color. */
+    padding: 2rem 0;
+}
+
+.feature-card {
+    width: 22%;
+    /* Adjust the width for responsiveness if necessary. */
+    background-color: #ffffff;
+    /* This should be your card background color. */
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+}
+
+.feature-card i {
+    color: #007bff;
+    /* This color is for the icons, adjust it as needed. */
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: #333;
+    /* Adjust the title color as needed. */
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+    color: #666;
+    /* Adjust the text color as needed. */
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .feature-card {
+        width: 48%;
+        /* Adjust the width for mobile responsiveness. */
+    }
+}
+
+@media (max-width: 480px) {
+    .features-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        width: 80%;
+        /* Adjust the width for smaller devices. */
+    }
+}
+
+.content-section {
+    padding: 20px;
+    background-color: #f0f4f8;
+    /* Adjust the background color as needed */
+}
+
+.image-container {
+    flex: 1;
+    max-width: 100%;
+    /* Adjust the width as needed */
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.text-container {
+    flex: 1;
+    max-width: 100%;
+    /* Adjust the width as needed */
+}
+
+.text-container h1 {
+    font-size: 2em;
+    /* Adjust the font size as needed */
+    color: #333;
+    /* Adjust the font color as needed */
+}
+
+.text-container p {
+    font-size: 1em;
+    color: #666;
+    /* Adjust the paragraph color as needed */
+    margin-bottom: 20px;
+}
+
+.course-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    /* Adjust the button color as needed */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    /* Adjust the border-radius as needed */
+    outline: none;
+}
+
+.course-button:hover {
+    background-color: #0056b3;
+    /* Adjust the button hover color as needed */
+}
+
+@media(min-width:768px) {
+    .text-container {
+        margin-left: 50px;
+    }
+
+    .content-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-section {
+    position: relative;
+}
+
+.right-section-span-1 {
+    color: #007bff;
+}
+
+.right-section-span-2 {
+    color: grey;
+}
+
+@media(min-width:768px) {
+    .left-section {
+        max-width: 50%;
+    }
+
+    .right-section {
+        margin-left: 10px;
+    }
+
+    .ls-second {
+        order: 1;
+        margin-left: 10px;
+    }
+
+    .rs-second {
+        order: 0;
+    }
+}
+
+
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card {
+    position: absolute;
+    animation: moveUpDown 3s ease-in-out infinite;
+}
+
+.card-top-right {
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    max-width: 150px;
+}
+
+.card-top-right-second {
+    top: 0;
+    right: -3%;
+    transform: translate(50%, -50%);
+    max-width: 150px;
+}
+
+.card-bottom-left {
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, 50%);
+    max-width: 150px;
+}
+
+.card-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-.5cm);
+    }
+}
+
+.right-section {
+    max-width: 50%;
+
+}
+
+.right-section h1 {
+    font-size: 2rem;
+    /* Adjust size as needed */
+}
+
+.right-section p {
+    font-size: 1rem;
+    /* Adjust size as needed */
+}
+
+.right-section button {
+    padding: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .section-wrapper {
+        flex-direction: column;
+    }
+
+    .right-section {
+        max-width: 100%;
+        margin-top: 2em;
+    }
+}
+
+.booking-demo-section {
+    padding: 2rem;
+    background-color: #f0f4f8;
+    /* Replace with the actual color from your design */
+}
+
+@media(min-width : 768px) {
+    .booking-first-part {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+
+.demo-logo-container {
+    text-align: center;
+}
+
+.demo-logo {
+    display: inline-block;
+    animation: heartbeat 1.4s ease-in-out infinite;
+    color: #007bff;
+    /* Replace with the actual color from your design if needed */
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+
+    14% {
+        transform: scale(1.3);
+    }
+
+    28% {
+        transform: scale(1);
+    }
+
+    42% {
+        transform: scale(1.3);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+}
+
+.stats-cards-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-card {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: #ffffff;
+    /* Replace with the actual color from your design */
+    text-align: center;
+}
+
+.stat-card h3 {
+    margin: 0;
+    color: #000000;
+    /* Replace with the actual color from your design */
+    font-size: 2rem;
+}
+
+.stat-card p {
+    color: #666666;
+    /* Replace with the actual color from your design */
+    font-size: 1rem;
+}
+
+.booking-button-container {
+    text-align: center;
+}
+
+.book-demo-button {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    /* Replace with the actual button color from your design */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .booking-demo-section {
+        flex-direction: column;
+    }
+
+    .stats-cards-container {
+        flex-direction: column;
+    }
+
+    .stat-card {
+        margin-bottom: 1rem;
+    }
+}
+
+.book-demo-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .booking-demo-section {
+        flex-direction: column;
+    }
+
+    .stats-cards-container {
+        flex-direction: column;
+    }
+
+    .stat-card {
+        margin-bottom: 1rem;
+    }
+}
+
+
+.reviews-section {
+    text-align: center;
+    background-color: #F0F4F8;
+    /* Replace with the actual color from the image */
+    padding: 2rem;
+}
+
+.reviews-section h2 {
+    color: #000;
+    /* Black - adjust based on actual colors */
+    margin-bottom: 0.5rem;
+}
+
+.reviews-carousel {
+    display: flex;
+    overflow-x: hidden;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    /* Enables snap scrolling for each card */
+}
+
+.review-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    padding: 2rem;
+    flex: 0 0 auto;
+    width: 300px;
+    /* Fixed width for larger screens */
+    scroll-snap-align: start;
+    /* Aligns the snap point for each card */
+    white-space: normal;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reviews-carousel {
+        flex-wrap: nowrap;
+        /* Ensure cards don't wrap on small screens */
+    }
+
+    .review-card {
+        width: 90%;
+        /* Each card takes full width on small screens */
+        margin: 1rem 0;
+        /* Adjust margin to only top and bottom */
+    }
+
+    .review-card h3 {
+        font-size: 14px;
+    }
+
+    .review-card p {
+        font-size: 10px;
+    }
+}
+
+
+
+.faq-section {
+    background-color: #F0F4F8;
+    /* Replace with the actual color from the image */
+    padding: 2rem;
+}
+
+.faq-header {
+    text-align: center;
+}
+
+.faq-header h2 {
+    color: #6C757D;
+    /* Dark gray - adjust based on actual colors */
+    margin-bottom: .5rem;
+}
+
+.faq-header h1 {
+    color: #000;
+    /* Black - adjust based on actual colors */
+    margin-bottom: 1rem;
+}
+
+.btn-get-started {
+    background-color: #007bff;
+    /* IllumiDesk Blue - adjust based on actual colors */
+    color: #fff;
+    /* White */
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.btn-get-started:hover {
+    background-color: #0056b3;
+}
+
+.btn-get-started i {
+    margin-right: 0.5rem;
+}
+
+.faq-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.faq-item {
+    flex-basis: 45%;
+    /* Adjust the width for responsiveness */
+    margin-bottom: 2rem;
+}
+
+.faq-item h3 {
+    color: #007bff;
+    /* Adjust based on actual colors */
+    margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+    color: #212529;
+    /* Bootstrap's default text color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq-item {
+        flex-basis: 100%;
+    }
+
+    .btn-get-started {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+.footer {
+    background-color: #123456;
+    /* Replace with actual color code from the image */
+    color: #ffffff;
+    padding: 2em;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    margin-right: 2em;
+}
+
+.social-links {
+    list-style-type: none;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 0.5em;
+}
+
+.footer-links h4 {
+    font-weight: bold;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.footer-links ul li a:hover {
+    opacity: 1;
+}
+
+.footer-logo {
+    width: 200px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter input {
+    padding: 0.5em;
+    margin-top: 1em;
+}
+
+.newsletter button {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    background-color: #234567;
+    /* Replace with actual color code from the image */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    border-top: 1px solid #345678;
+    /* Replace with actual color code from the image */
+    padding-top: 1em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.customer-service-logo {
+    position: fixed;
+    bottom: 1em;
+    right: .5em;
+    font-size: 3em;
+    /* Adjust size as needed */
+    color: #007bff;
+    /* Replace with actual color code for the icon from the image */
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+}
+
+.login-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.login-header,
+.login-form-container {
+    width: 50%;
+}
+
+.login-logo {
+    max-width: 100px;
+    /* Adjust as needed */
+}
+
+.welcome-message {
+    font-size: 1.2em;
+}
+
+.login-form-container {
+    text-align: left;
+}
+
+.login-help-links {
+    text-align: right;
+}
+
+.login-help,
+.contact-support {
+    margin-left: 10px;
+}
+
+.login-google-logo {
+    margin-right: 13px;
+}
+
+.google-login-btn {
+    background-color: lightgrey;
+    /* Google blue */
+    color: #222;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.login-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.login-checkbox {
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+}
+
+.login-label {
+    margin-top: 9px;
+}
+
+.login-btn {
+    background-color: #22c55e;
+    /* Adjust the color as needed */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .login-page {
+        flex-direction: column;
+    }
+
+    .login-header,
+    .login-form-container {
+        width: 100%;
+    }
+
+    .login-help-links {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
