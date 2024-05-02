@@ -1,0 +1,582 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #222222;
+}
+
+header {
+    text-align: center;
+}
+
+.navbar {
+    background: linear-gradient(to right, black 50%, #b74f6f);
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    height: 80px;
+    width: 100px;
+    max-width: 200px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.enroll-button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.header-content {
+    padding: 15px;
+    margin-top: 7rem;
+}
+
+.header-content h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-content span {
+    background: -webkit-linear-gradient(red, pink, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-para {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header-para-1 {
+    font-size: 16px;
+}
+
+.header-para-1-dot {
+    font-size: 8px;
+    margin-right: 10px;
+}
+
+@media (max-width: 992px) {
+    .navbar nav {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-content h1 {
+        font-size: 2.5em;
+    }
+
+    .header-para {
+        font-size: 2.0em;
+    }
+
+    .header-para-1 {
+        font-size: 1.6em;
+    }
+}
+
+.stats {
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background: #222222;
+}
+
+.header-card {
+    flex: 1 1 20%;
+    /* Adjusts the basis from which the flex item will grow or shrink */
+    margin: 10px;
+    padding: 20px;
+    background: transparent;
+    /* Slightly transparent black */
+    text-align: center;
+    border-radius: 8px;
+}
+
+.header-stat-number {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.header-stat-text {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .header-card {
+        flex: 1 1 48%;
+        /* Makes two cards fit in a row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-card {
+        flex: 1 1 100%;
+        /* Stacks the cards vertically on extra small screens */
+    }
+}
+
+.gen-ai-form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: solid 1px;
+    border-color: grey;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styling for telephone and email input fields */
+.gen-ai-input {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: #333;
+    color: white;
+    width: calc(50% - 22px);
+}
+
+/* Flex container for input fields to manage layout responsively */
+.gen-ai-input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Checkbox styles for consistent look */
+.gen-ai-checkbox {
+    margin-right: 5px;
+}
+
+/* Labels are block level to align text properly */
+.gen-ai-label {
+    display: block;
+    margin: 10px 0;
+    text-align: left;
+}
+
+/* Button styling for clear call to action */
+.gen-ai-button {
+    padding: 10px 20px;
+    background-color: #222;
+    border: solid .01px;
+    border-color: grey;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.gen-ai-button:hover {
+    background-image: linear-gradient(to right, red, pink, blue);
+    ;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .gen-ai-input {
+        width: 100%;
+        /* Stacks the inputs on smaller screens */
+    }
+
+}
+
+@media (max-width: 600px) {
+    .gen-ai-form-container {
+        margin: 10px 10px;
+    }
+}
+
+.offer-button {
+    display: inline-block;
+    background-color: #FEC82F;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    position: relative;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.offer-button a {
+    color: black;
+    /* Ensures text color is black */
+    text-decoration: none;
+    /* Removes underline from link */
+}
+
+.offer-button::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    /* Adjusts position to the left of the button */
+    top: 50%;
+    transform: translateY(-50%);
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    /* Creates the arrow shape */
+    border-color: transparent #FEC82F transparent transparent;
+}
+
+.offer-button span {
+    display: block;
+    font-size: 14px;
+    /* Smaller font size for the timer */
+    color: #333;
+    /* Dark grey color for the timer text */
+}
+
+.genai-section-container {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #222 60%, #b74f6f);
+    color: white;
+}
+
+.genai-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.genai-card {
+    background-color: #222;
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+    border-radius: 20px;
+    border: solid 1px;
+    border-color: grey;
+    /* Each card takes up 30% of the container width on larger screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.genai-card h2 {
+    font-size: 1.5em;
+}
+
+.genai-card p {
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .genai-card {
+        width: 100%;
+        /* Each card takes up 100% of the container width on smaller screens */
+    }
+}
+
+.genai-stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: transparent;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.genai-stat {
+    flex: 1 1 20%;
+    /* Adjusts so that on larger screens we have all items in one row */
+    margin: 10px;
+    background-color: transparent;
+    /* Dark background for each stat card */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.genai-stat i {
+    background-color: #444;
+    /* Slightly lighter background for the icon */
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.genai-stat h3 {
+    margin: 5px 0;
+}
+
+.genai-stat p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .genai-stat {
+        flex: 1 1 100%;
+        /* On smaller screens, take full width */
+    }
+}
+
+/* Roadmap Styles */
+.roadmap-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.roadmap {
+    position: relative;
+    padding: 20px;
+    background: #333;
+    border-radius: 25px;
+}
+
+.roadmap-item {
+    position: relative;
+    padding-left: 40px;
+    line-height: 2;
+    color: white;
+}
+
+.roadmap-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 20px;
+    bottom: -20px;
+    width: 3px;
+    background: #fff;
+}
+
+.roadmap-item[data-step]::before {
+    content: attr(data-step);
+    position: absolute;
+    left: -5px;
+    top: 6px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: purple;
+    color: white;
+    border-radius: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .roadmap {
+        background: #222;
+        /* Different background for small screens */
+    }
+
+    .roadmap-item {
+        padding-left: 20px;
+        /* Smaller padding on small screens */
+    }
+
+    .roadmap-item[data-step]::before {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+}
+
+.custom-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-columns-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footer-section {
+    margin-right: 2em;
+}
+
+.footer-links h4 {
+    font-weight: bold;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.footer-links ul li a:hover {
+    opacity: 1;
+}
+
+.footer-social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon-link {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    /* Icon size */
+}
+
+.footer-policy-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-policy-links a:not(:last-child):after {
+    content: " | ";
+}
+
+.footer-copy-right {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-columns-container {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+}
+
+.app-store-button {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #222;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    width: 150px;
+}
+
+.app-store-button i {
+    margin-right: 5px;
+}
+
+.app-store-button span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+.styled-hr {
+    border-top: 2px solid #ffffff;
+}
+
+.content-header h1,
+.content-header p {
+    text-align: center;
+    padding: 20px;
+}
+
+.module-container .accordion-button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 6px;
+}
+
+.module-container .accordion-button:after {
+    content: '\002B';
+    /* Unicode character for "+" sign */
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.module-container .module-content {
+    padding: 0 18px;
+    margin: 10px 0;
+    background-color: #2222;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.profile-section img {
+    display: block;
+    max-width: 90%;
+    height: 90%;
+    max-height: 500px;
+    margin: 0px 20px;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+    .module-container .accordion-button {
+        font-size: 13px;
+    }
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.info-row div {
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin: 8px 5px;
+}
+
+.module-dropdown-container {
+    padding: 20px 20px;
+}
